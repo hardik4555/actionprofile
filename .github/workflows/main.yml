@@ -8,6 +8,11 @@ on:
       - main
       - feature
 
+  workflow_dispatch:
+
+  schedule:
+    - cron: '10 14 * * 1-5' # Runs every day at midnight
+
 jobs:
   Build:
     runs-on: ubuntu-latest
